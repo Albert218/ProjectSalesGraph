@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9a6dfa;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sempro.HelloController">
+   <children>
+      <LineChart fx:id="monChart" layoutX="146.0" layoutY="29.0" prefHeight="303.0" prefWidth="429.0" style="-fx-background-color: white;" title="Monthly Sale Chart">
+        <xAxis>
+          <CategoryAxis label="Year" side="BOTTOM" fx:id="xx" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Sales" fx:id="yy" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button fx:id="Load" layoutX="338.0" layoutY="362.0" mnemonicParsing="false" onAction="#onLoad" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #ff6abf;" text="Load Graph" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text fill="WHITE" layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Months" wrappingWidth="51.47003173828125">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="76.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales" wrappingWidth="51.47003173828125">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jan" wrappingWidth="51.47003173828125" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feb" wrappingWidth="51.47003173828125" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nov" wrappingWidth="51.47003173828125" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dec" wrappingWidth="51.47003173828125" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oct" wrappingWidth="51.47003173828125" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sept" wrappingWidth="51.47003173828125" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aug" wrappingWidth="51.47003173828125" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="June" wrappingWidth="51.47003173828125" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="May" wrappingWidth="51.47003173828125" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="July" wrappingWidth="51.47003173828125" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apr" wrappingWidth="51.47003173828125" />
+      <Text fill="WHITE" layoutX="14.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mar" wrappingWidth="51.47003173828125" />
+      <TextField fx:id="txtFeb" layoutX="65.0" layoutY="69.0" prefHeight="25.0" prefWidth="51.0" />
+      <TextField fx:id="txtSept" layoutX="65.0" layoutY="272.0" prefHeight="25.0" prefWidth="51.0" />
+      <TextField fx:id="txtMar" layoutX="65.0" layoutY="96.0" prefHeight="25.0" prefWidth="51.0" />
+      <TextField fx:id="txtAp" layoutX="65.0" layoutY="124.0" prefHeight="25.0" prefWidth="51.0" />
+      <TextField fx:id="txtAug" layoutX="65.0" layoutY="240.0" prefHeight="25.0" prefWidth="51.0" />
+      <TextField fx:id="txtOct" layoutX="65.0" layoutY="302.0" prefHeight="25.0" prefWidth="51.0" />
+      <TextField fx:id="txtMay" layoutX="65.0" layoutY="152.0" prefHeight="25.0" prefWidth="51.0" />
+      <TextField fx:id="txtJune" layoutX="65.0" layoutY="182.0" prefHeight="25.0" prefWidth="51.0" />
+      <TextField fx:id="txtJuly" layoutX="65.0" layoutY="212.0" prefHeight="25.0" prefWidth="51.0" />
+      <TextField fx:id="txtNov" layoutX="65.0" layoutY="333.0" prefHeight="25.0" prefWidth="51.0" />
+      <TextField fx:id="txtDec" layoutX="65.0" layoutY="362.0" prefHeight="25.0" prefWidth="51.0" />
+      <TextField fx:id="txtJan" layoutX="65.0" layoutY="41.0" prefHeight="25.0" prefWidth="51.0" />
+      <Button fx:id="btnBack" layoutX="232.0" layoutY="362.0" mnemonicParsing="false" onAction="#onbtnBack" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: white;" text="Back" />
+      <Button fx:id="btnClear" layoutX="486.0" layoutY="362.0" mnemonicParsing="false" onAction="#onBtnClear" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: white;" text="Clear" />
+   </children>
+</AnchorPane>
